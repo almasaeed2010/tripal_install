@@ -352,7 +352,7 @@ function tripal_install_perform_tasks(array $settings) {
     $version = drush_choice($options, dt('Which version of Chado would you like installed?'));
   }
   else {
-    $version = intval(drush_get_option('chado_version', 0));
+    $version = intval(drush_get_option('chado-version', 0));
   }
 
   if ($version) {
