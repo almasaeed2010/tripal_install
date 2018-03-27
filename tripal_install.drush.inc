@@ -223,7 +223,7 @@ function tripal_install_perform_tasks(array $settings) {
   $postgres_username = $settings['postgres_username'];
   $postgres_password = $settings['postgres_password'];
   $host = $settings['host'];
-  $database = ['database'];
+  $database = $settings['database'];
   $port = $settings['port'];
   $username = $settings['username'];
   $user_password = $settings['user_password'];
