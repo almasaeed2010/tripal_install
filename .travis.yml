@@ -20,15 +20,15 @@ before_script:
   - composer install
 
 script:
-  - ./vendor/bin/drush --include=. tripal-generic-install \
-                       --interactive=0 \
-                       --site-name="tripal 3 test" \
-                       --site-email="test@example.com" \
-                       --admin-username="admin" \
-                       --admin-password="adminpass" \
-                       --db-name="travis" \
-                       --db-host="127.0.0.1" \
-                       --db-port="5432" \
-                       --db-username="postgres" \
-                       --db-password="dbpass" \
+  - ./vendor/bin/drush --include=. tripal-generic-install
+                       --interactive=0
+                       --site-name="tripal 3 test"
+                       --site-email="test@example.com"
+                       --admin-username="admin"
+                       --admin-password="adminpass"
+                       --db-name="travis"
+                       --db-host="127.0.0.1"
+                       --db-port="5432"
+                       --db-username="postgres" 
+                       --db-password="dbpass" 
                        --chado-version=1
