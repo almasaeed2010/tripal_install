@@ -254,7 +254,7 @@ function tripal_install_perform_tasks(array $settings) {
   ];
   $install = drush_invoke_process('@self', 'si', $args, $options);
   drush_print(dt(""));
-  if (!$install) {
+  if ($install === false) {
     throw new Exception("An error occurred when attempting to install Drupal.
                           If you would like to try again please remove any files
                           or tables created during this intial installation attempt.");
