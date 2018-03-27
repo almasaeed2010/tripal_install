@@ -75,7 +75,7 @@ function tripal_install_drush_command() {
 function drush_tripal_install_install_prepare() {
   $interactive = drush_get_option('interactive', TRUE);
   try {
-    if ($interactive) {
+    if ($interactive === true || $interactive === 1) {
       $settings = tripal_install_get_settings_interactively();
     }
     else {
